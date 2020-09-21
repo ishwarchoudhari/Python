@@ -1,0 +1,14 @@
+## Number Guessing Game By Random Module
+import random                                 #Import Random Module to Generate Random numbers from 1-10
+print("Welcome to the Number  Guessing Game!")     #print WELCOME message to users
+i=random.randrange(1,10)                     #random numbers from 1-10
+count =0                                  #Number of Counts users has made
+limit =5                              #Max limit for User to Guess the number
+while count< limit:                             #loop with condition
+    guess= int(input("Please enter the number from 1-10:"))   # input function for the user to guess guess
+    count+=1         #increment the count by +1 each time until guessed right
+    if guess == i:     #If guessed is made right
+        print("you WON!!")  #Print you won
+        break      #if guessed right then break the loop
+    else:               # if not guessed right
+        print("Try again")    #prnt try again until guessed right to it reaches to limit
